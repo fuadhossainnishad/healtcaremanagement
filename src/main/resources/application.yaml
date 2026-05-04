@@ -1,15 +1,21 @@
 spring:
   application:
     name: demo
-  
+
+  devtools:
+    restart:
+      enable: true
+    livereload:
+      enable: true
+
   datasource:
     url: ${SPRING_DATABASE_URL}
     username: ${SPRING_DATABASE_USERNAME}
     password: ${SPRING_DATABASE_PASSWORD}
     driver-class-name: org.postgresql.Driver
-  
+
   jpa:
-    hibernate:     
+    hibernate:
       ddl-auto: update
       show-sql: true
       # properties: 
